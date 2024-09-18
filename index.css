@@ -93,6 +93,16 @@ h1{
     position: fixed;
 }
 
+#detalhes{
+    width: 43px;
+    height: 2px;
+    top: 64px;
+    left: 130px;
+    gap: 0px;
+    border-radius: 1px 0px 0px 0px;
+    position: fixed;
+}
+
 #text1{
     font-size: 56px;
     font-family: "Open Sans", sans-serif;
