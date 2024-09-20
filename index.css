@@ -8,6 +8,14 @@ h1{
     font-weight: 200;
 }
 
+hr {
+    border: .1vw solid #B2784A;
+    width: 3.5vw;
+    border-radius: 1vw;
+    margin-top: .1vw;
+    margin-bottom: 0px;
+}
+
 .flex-row{
     display: flex;
     align-items: center;
@@ -24,13 +32,30 @@ h1{
 }
 
 nav{
-    aspect-ratio: 12/1;
-    height: auto;
+    
+    height: 100;
     width: 100%;
     top: 0px;
     left: 0px;
     background-color: #291505;
-    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.divsNav{ /*sou uma classe e posso ser reutilizada*/
+    display: flex;
+    width: 30%;
+    align-items  : center; /*centraliza verticalmente*/
+    justify-content: space-around; /*"espalha" horizontalmente*/
+
+}
+
+.divCenter{
+    display: flex;
+    flex-direction: column;
+    align-items  : center; /*centraliza verticalmente*/
+    justify-content: space-around;
 }
 
 #sobre-nos{
@@ -41,7 +66,6 @@ nav{
     width: 71px;
     height: 22px;
     
-    position: fixed;
 }
 #sobre-nos::after{
     content: '';
@@ -51,7 +75,7 @@ nav{
     border-radius: 1px;
     
     bottom: -10px;
-    position: fixed;
+
 }
 
 #cafeteria{
@@ -61,8 +85,7 @@ nav{
     font-weight: 700;
     width: 66px;
     height: 22px;
-    
-    position: fixed;
+
 }
 #cafeteria::after{
     content: '';
@@ -70,16 +93,12 @@ nav{
     width: 43px;
     height: 2px;
     border-radius: 1px;
-    
     bottom: -10px;
-    position: fixed;
 }
 
 #logo{
     width: 43px;
     height: 54.86px;
-    
-    position: fixed;
 }
 
 #nome{
@@ -89,8 +108,6 @@ nav{
     font-weight: 400;
     width: 138px;
     height: 22px;
-    
-    position: fixed;
 }
 
 #contato{
@@ -100,8 +117,6 @@ nav{
     font-weight: 700;
     width: 60px;
     height: 22px;
-    
-    position: fixed;
 }
 #contato::after{
     content: '';
@@ -112,14 +127,13 @@ nav{
     left: 1063px;
     
     bottom: -10px;
-    position: fixed;
 }
 
 #phone-logo{
     width: 20px;
     height: 22.86px;
 
-    position: fixed;
+
 }
 
 #telefone{
@@ -130,7 +144,7 @@ nav{
     width: 90px;
     height: 22px;
     
-    position: fixed;
+
 }
 
 
