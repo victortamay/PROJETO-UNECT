@@ -292,14 +292,14 @@ nav{
     transform: translateX(-50%);
 }
 
-.tituloItemCarousel{
+.tituloItemCarrossel{
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
 
 }
 
-.itemCarousel{
+.itemCarrossel{
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
 
@@ -334,4 +334,8 @@ nav{
     display: flex; 
     justify-content: center;
     margin-bottom: 30px;
+}
+
+p {
+    line-height: 1.6;
 }
