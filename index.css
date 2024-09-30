@@ -316,7 +316,7 @@ nav{
 .carroselImg {
     display: flex;
     width: 140%; 
-    margin-left: 110px;
+    margin-left: 500px;
 }
 
 .carroselImg img {
