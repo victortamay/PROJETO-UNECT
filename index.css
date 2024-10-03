@@ -54,6 +54,7 @@ nav{
     align-items: center;
     justify-content: space-evenly;
     position: fixed;
+    z-index: 1000;
 }
 
 .divsNav{ /*sou uma classe e posso ser reutilizada*/
@@ -320,7 +321,7 @@ nav{
 .carroselImg {
     display: flex;
     position: relative;
-    width: 140%; 
+    width: 100%; 
     
 }
 
@@ -421,8 +422,12 @@ p {
     font-weight: bold;
   }
 
-.flecha-esq{
-    size: 10px;
-    width: 10px;
+#flecha-esq{
+    width: 30px;
+    height: auto;
+}
+
+#flecha-dir{
+    width: 30px;
     height: auto;
 }
