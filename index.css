@@ -243,6 +243,7 @@ nav{
 }
 
 #tituloSobre{
+    font-weight: bold;
     font-size: 60px;
     color: #1F0C00;
     font-family: "Cormorant Garamond", serif;  
@@ -275,6 +276,7 @@ nav{
 }
 
 #cafet{
+    font-weight: bold;
     color: white; 
     font-size: 55px;
     margin: 0;
@@ -296,6 +298,7 @@ nav{
 }
 
 .tituloItemCarrossel{
+    font-weight: bold;
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
