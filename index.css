@@ -77,6 +77,7 @@ nav{
     font-family: 'Cormorant Garamond', serif;
     color: #F0F0F0;
     font-weight: 700;
+    cursor: pointer;
     /*width: 71px;*/
     /*height: 22px;*/
     
@@ -95,6 +96,7 @@ nav{
     font-family: 'Cormorant Garamond', serif;
     color: #F0F0F0;
     font-weight: 700;
+    cursor: pointer;
     /*width: 66px;
     height: 22px;*/
 }
@@ -117,6 +119,7 @@ nav{
     font-family: 'Cormorant Garamond', serif;
     color: #F0F0F0;
     font-weight: 400;
+    
     /*width: 138px;
     height: 22px;*/
 }
@@ -126,6 +129,7 @@ nav{
     font-family: 'Cormorant Garamond', serif;
     color: #F0F0F0;
     font-weight: 700;
+    cursor: pointer;
     /*width: 60px;
     height: 22px;*/
 }
@@ -175,22 +179,37 @@ nav{
     margin-top: 60px;
 }
 
-#text3{
+#botaoConhecer{
+    width: 350px;
+    height: 70px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+#textBotaoConhecer{
     font-size: 25px;
     font-family: "Open Sans", sans-serif;
     color: #F0F0F0; 
     font-weight: bold;
     width: 400px;
     height: 70px;
-    text-align: left;
-    margin-top: 80px;
-    background-color: #8F542E;
-    padding: 32px, 12px, 32px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 8px;
 }
+
+#botaoFale{
+    font-family: "Open Sans", sans-serif;
+    color: #F0F0F0; 
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: -288px;
+    font-size: 25px;
+}
+
 
 .botao{
     border-radius: 15px;
@@ -198,12 +217,15 @@ nav{
     justify-content: space-evenly;
     align-items: center;
     background-color: #8F542E;
-    color: #F0F0F0;
+    padding: 32px, 12px, 32px;
     height: 70px;
-    width: 300px;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: "Open Sans", sans-serif;
+    width: 350px;
+    cursor: pointer;
+}
+
+.botao:hover{
+    display: flex;
+    background-color: #CA8E67;
 }
 
 #header{
@@ -250,12 +272,7 @@ nav{
     font-family: "Cormorant Garamond", serif;  
 }
 
-#botaoFale{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: -288px;
-}
+
 
 #containerSobre{
     margin-top: -40px;
@@ -300,16 +317,33 @@ nav{
 
 .tituloItemCarrossel{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
-
+    display: flex;
+    margin-left: 20px;
 }
 
 .itemCarrossel{
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Open Sans", sans-serif;
+    margin-left: 20px;
+    margin-top: -15px;
+}
 
+.item{
+    background-color: #F0F0F0;
+    padding: 32px, 12px, 32px;
+    display: flex;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 450px;
+    height: 480px;
+    transition-duration: 0.4s;
+}
+.item:hover {
+    margin-bottom: 10px;
 }
 
 .carrosel {
@@ -322,19 +356,20 @@ nav{
     display: flex;
     position: relative;
     width: 100%; 
+
     
 }
 
 .carroselImg img {
-    width: 220px;
-    height: 220px;
+    width: 430px;
+    height: 340px;
     border-radius: 10px;
     margin-top: 10px;
 }
 
 #carrosselPrinc{
     margin-top: -140px;
-    height: 800px; 
+    height: 900px; 
     background-color: #80451F; 
 }
 
@@ -342,50 +377,11 @@ nav{
     display: flex; 
     justify-content: center;
     margin-bottom: 30px;
+    
 }
 
 p {
     line-height: 1.6;
-}
-
-#brigadeiro{
-    background-color: #F0F0F0;
-    padding: 32px, 12px, 32px;
-    display: flex;
-    border-radius: 8px;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 250px;
-}
-
-#bolo{
-    background-color: #F0F0F0;
-    padding: 32px, 12px, 32px;
-    display: flex;
-    border-radius: 8px;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 250px;
-}
-
-#paodemel{
-    background-color: #F0F0F0;
-    padding: 32px, 12px, 32px;
-    display: flex;
-    border-radius: 8px;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 250px;
-}
-
-#sorvete{
-    background-color: #F0F0F0;
-    padding: 32px, 12px, 32px;
-    display: flex;
-    border-radius: 8px;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 250px;
 }
 
 #entreEmContato{
@@ -427,11 +423,13 @@ p {
 #flecha-esq{
     width: 30px;
     height: auto;
+    cursor: pointer;
 }
 
 #flecha-dir{
     width: 30px;
     height: auto;
+    cursor: pointer;
 }
 
 .boxInfo{
@@ -515,5 +513,77 @@ p {
     margin-bottom: -14px;
     background: #B2784A;
     border-radius: 3px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.form{
+    padding: 30px;
+    background-color:#F5F3ED;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: flex;
+    border: 1px solid #8F542E;
+    border-radius: 5px;  
+    height: 80px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    width: 800px;
+}
+
+textarea[name="message"] {
+    display: flex;
+    width: 100%; 
+    height: 200px; 
+    margin-bottom: 20px;
+}
+
+#botaoMsg {
+    display: flex;
+    color: #F0F0F0;
+    border-radius: 5px;
+    align-items: center;
+    text-decoration: none;
+    background-color: #8F542E;
+    justify-content: space-around;
+    height: 50px;
+    width: 230px;
+    font-size: 17px;
+    font-weight: 800;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+#botaoMsg:hover{
+    display: flex;
+    background-color: #CA8E67;
+}
+
+
+
+footer{
+    background-color: #57290B;
+    color: #ffdab8;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 110px;
+
 }
 

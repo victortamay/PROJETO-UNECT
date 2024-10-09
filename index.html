@@ -13,7 +13,7 @@
             <div class = 'box border flex-row'>
                 <div class = 'divsNav'>
                     <div class = 'divCenter'>
-                        <div id ='sobre-nos'>Sobre nós</div>
+                        <div id ='sobre-nos' >Sobre nós</div>
                         <hr>
                     </div>
                     <div class = 'divCenter'>
@@ -50,10 +50,16 @@
 
 
         <div id="header" class = 'flex-row' >
-            <div class = 'box border'>
+            <div class = 'box'>
                 <div id = 'text1'>Leia acompanhado de uma culinária de qualidade</div>
                 <div id ='text2'>Aonde a paixão por livros e o amor por café sempre  tem lugar á mesa.</div>
-                <div id= 'text3'><p>VENHA CONHECER</p><img src = 'res/Union.png'></div>
+                
+                <div id= 'botaoConhecer'>
+                    <div class= "botao" >
+                        <div id= 'textBotaoConhecer' class = 'flex-row' ><div>VENHA CONHECER</div><img src = 'res/Union.png'></div>
+                    </div> 
+                </div>
+
             </div>
         </div>
 
@@ -76,7 +82,7 @@
                         venha saber mais dessa jornada:
                     </p>
                 </div>
-                <div id="botaoFale">
+                <div id="botaoFale" >
                     <p class="botao">FALE CONOSCO<img src = 'res/Union.png'></p>
                 </div>
             </div>   
@@ -93,57 +99,67 @@
             <div id="tituloCarrossel" class = 'flex-row'>
                 <p id="cafet" class = 'flex-row'>CAFETERIA<h1></h1></p>
             </div>
-            <div class="carrosel flex-row ">
-                <div class="carroselImg flex-row border">
-                <img class="border" id = 'flecha-esq' src="res/flecha-esq.png" alt="">
-                  <div id = 'brigadeiro' class="item divCenter">
+            <div class="carrosel flex-row">
+                <div class="carroselImg flex-row">
+                <img  id = 'flecha-esq' src="res/flecha-esq.png" alt="">
+
+                <div class = 'item'>
+                    <div id = 'brigadeiro' class="divCenter">
                         <img src="res/brigadeiro.png">
-                        <div style="width: 220px;">
-                            <p class="tituloItemCarrossel">Brigadeiro de capuccino</p>
+                        <div>
+                            <p class="tituloItemCarrossel ">Brigadeiro de capuccino</p>
                             <p class="itemCarrossel">O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria...</p>
                         </div>
                   </div>
-              
-                  <div id = 'paodemel' class="item divCenter">
-                        <img src="res/paodemel.png">
-                        <div style="width: 220px;">
-                            <p class="tituloItemCarrossel">Pão de Mel</p>
-                            <p class="itemCarrossel">O pão de mel é um dos doces mais tradicionais que temos, ele é recheado com doce de leite...</p>
-                        </div>
-                  </div>
-              
-                  <div id = 'bolo' class="item divCenter">
+                </div>
+
+                <div class = 'item'>
+                    <div id = 'bolo' class="divCenter">
                         <img src="res/bolo.png">
-                        <div style="width: 220px;">
+                        <div>
                             <p class="tituloItemCarrossel">Bolo de chocolate</p>
                             <p class="itemCarrossel">O bolo de chocolate é uma das sobremesas mais pedidas da Cafeteira, ele possui um recheio com...</p>
                         </div>
                   </div>
-              
-                  <div id = 'sorvete' class="item divCenter">
-                    <img src="res/biscoito.png">
-                    <div style="width: 220px;">
-                        <p class="tituloItemCarrossel">Sorvete de Café</p>
-                        <p class="itemCarrossel">O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no fim...</p>
-                    </div>
+                </div>
+
+                <div class = 'item'>
+                    <div id = 'paodemel' class="divCenter">
+                        <img src="res/paodemel.png">
+                        <div>
+                            <p class="tituloItemCarrossel">Pão de Mel</p>
+                            <p class="itemCarrossel">O pão de mel é um dos doces mais tradicionais que temos, ele é recheado com doce de leite...</p>
+                        </div>
                   </div>
-                  <img id = 'flecha-dir' src="res/flecha-dir.png" alt="">
+                </div>
+
+                <div class = 'item'>
+                    <div id = 'sorvete' class="divCenter">
+                        <img src="res/biscoito.png">
+                        <div>
+                            <p class="tituloItemCarrossel">Sorvete de Café</p>
+                            <p class="itemCarrossel">O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no fim...</p>
+                        </div>
+                      </div>
+                </div>
+                  
+                <img id = 'flecha-dir' src="res/flecha-dir.png" alt="">
                 </div>
             </div>
         </section>
 
         <section id = 'entreEmContato'>
             <div class="box">
-                <div id = 'BoxTituloContato' >
+                <div id = 'BoxTituloContato' class = 'border divsNav'>
                     <div class = 'fundoMarrom'>
-                        <div id = 'tituloContato'>
+                        <div id = 'tituloContato' >
                             <h2> ENTRE EM CONTATO </h2>
                         </div>
                     </div>
                 </div>
     
     
-                <div class="boxInfo border" >
+                <div class="boxInfo border  divsNav" >
                     <div class="retangulo">
                         <ul class="icon-style">  
                             <li class="icon-position"><img src="res/telefone.png" alt=""><span class="text-icons" >19-991256972</span></li>
@@ -156,10 +172,40 @@
                             <li class="text-logo-branca">Palavras Cafeinadas</li>
                         </ul> 
                     </div>
-    
+
+                    <div class="form">
+                        <form action="#" method="post">
+                            <label for="name">Nome:</label><br>
+                            <input type="text" id="name" name="name" required><br>
+
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required><br>
+
+                            <label for="message">Mensagem:</label><br>
+                            <textarea id="message" name="message" rows="10" required></textarea><br>
+                            
+                            
+                            
+                            
+                            <a id="botaoMsg" href="#">ENVIAR MENSAGEM<span class="material-icons"><img src="res/Union.png" alt=""></span></a>
+
+                            
+                        </form>
+                   </div>
+
                 </div>
+
+        
             </div>
         </section>
+
+        <footer>
+            <p>Desenvolvido por Unect Jr</p>
+            <p>Todos os direitos reservados ©</p>
+        </footer>
+
+
+
 	</body>
 </html>
 
