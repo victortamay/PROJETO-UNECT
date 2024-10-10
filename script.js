@@ -7,8 +7,6 @@ const botaoMenu = document.getElementById('menu');
 const botaoMenuFechar = document.getElementById('menuFechar');
 const Menu = document.getElementById('menuAberto');
 
-
-
 botaoSobreNos.addEventListener('click', () => {
     sobreNos.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
 });
@@ -96,7 +94,7 @@ botaoMenuFechar.addEventListener('click', () => {
 });
 
 window.addEventListener('click', (event) => {
-    if(event.terget == Menu){
+    if(event.target == Menu){
         Menu.style.display = "none";
     }
 });
