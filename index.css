@@ -432,6 +432,7 @@ nav{
 #cabecalhoContato{
     margin-left: 45px;
     margin-top: -90px;
+    transition-duration: 0.4s;
 }
 
 
@@ -443,6 +444,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    transition-duration: 0.4s;
 }
   
 .fundoMarrom2{
@@ -452,6 +454,7 @@ nav{
     margin-left: -1px;
     z-index: -1;
     width: 570px;
+    transition-duration: 0.4s;
 }
 
 
@@ -807,4 +810,21 @@ footer{
         font-size: 19px;
     }
 
+    #tituloContato{
+        font-size: 55px;
+    }
+
+    .fundoMarrom2{
+        border: 12px solid #FBC9A8;
+        width: 540px;
+        margin-top: -80px;
+    }
+
+    #cabecalhoContato{
+        margin-left: 30px;
+    }
+
+    footer{
+        
+    }
 }
