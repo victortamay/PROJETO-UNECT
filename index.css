@@ -23,6 +23,25 @@ h1{
     margin-bottom: 0px;
 }
 
+#navMobile{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.linhaMenu{
+    background-color: #B2784A;
+    border: 1.5px solid #B2784A;
+    width: 70px;
+    height: 3px;
+    border-radius: 9px;
+    margin-top: 12px;
+    margin-bottom: 0px; 
+}
+
 .flex-row{
     display: flex;
     align-items: center;
@@ -112,6 +131,7 @@ nav{
 #logo{
     width: 65px;
     height: auto;
+    transition-duration: 0.4s;
 }
 
 #nome{
@@ -119,6 +139,7 @@ nav{
     font-family: 'Cormorant Garamond', serif;
     color: #F0F0F0;
     font-weight: 400;
+    transition-duration: 0.4s;
     
     /*width: 138px;
     height: 22px;*/
@@ -158,6 +179,9 @@ nav{
     height: 22px;*/
 }
 
+#menu{
+    display: none;
+}
 
 #text1{
     font-size: 90px;
@@ -618,6 +642,40 @@ footer{
 }
 
 @media only screen and (max-width: 1200px){
+
+    #sobre-nos{
+        display:none;
+    }
+    #cafeteria{
+        display: none;
+    }
+    #contato{
+        display: none;
+    }
+    #phone-logo{
+        display: none;
+    }
+    #telefone{
+        display: none;
+    }
+    .linhaNav{
+        display: none;
+    }
+    #logoNav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #nome{
+        display: flex;
+        width: 400px;
+        justify-content: space-evenly;  
+    }
 
     #text1{
         font-size: 80px;
