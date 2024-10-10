@@ -3,7 +3,23 @@ const botaoCafeteria = document.getElementById('cafeteria');
 const botaoContato = document.getElementById('contato');
 const botaoConhecer = document.getElementById('botaoConhecer');
 const botaoFaleConosco = document.getElementById('botaoFale');
+const botaoMenu = document.getElementById('menu');
+const botaoMenuFechar = document.getElementById('menuFechar');
+const Menu = document.getElementById('menuAberto');
 
+botaoMenu.addEventListener('click', () => {
+    Menu.style.display = "block";
+});
+
+botaoMenuFechar.addEventListener('click', () => {
+    Menu.style.display = "none";
+});
+
+window.addEventListener('click', (event) => {
+    if(event.terget == Menu){
+        Menu.style.display = "none";
+    }
+});
 
 botaoSobreNos.addEventListener('click', () => {
     sobreNos.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
