@@ -653,6 +653,10 @@ footer{
     transition-duration: 0.4s;
 }
 
+#menuAberto{
+    display: none;
+}
+
 @media only screen and (max-width: 1480px){
 
     #text1{

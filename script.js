@@ -7,19 +7,7 @@ const botaoMenu = document.getElementById('menu');
 const botaoMenuFechar = document.getElementById('menuFechar');
 const Menu = document.getElementById('menuAberto');
 
-botaoMenu.addEventListener('click', () => {
-    Menu.style.display = "block";
-});
 
-botaoMenuFechar.addEventListener('click', () => {
-    Menu.style.display = "none";
-});
-
-window.addEventListener('click', (event) => {
-    if(event.terget == Menu){
-        Menu.style.display = "none";
-    }
-});
 
 botaoSobreNos.addEventListener('click', () => {
     sobreNos.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
@@ -97,6 +85,20 @@ document.addEventListener('DOMContentLoaded', () => {
         attCarrossel();  
     });
     
+});
+
+botaoMenu.addEventListener('click', () => {
+    Menu.style.display = "block";
+});
+
+botaoMenuFechar.addEventListener('click', () => {
+    Menu.style.display = "none";
+});
+
+window.addEventListener('click', (event) => {
+    if(event.terget == Menu){
+        Menu.style.display = "none";
+    }
 });
 
 
