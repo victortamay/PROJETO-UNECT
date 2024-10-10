@@ -14,11 +14,11 @@
                 <div class = 'divsNav'>
                     <div class = 'divCenter'>
                         <div id ='sobre-nos' >Sobre nós</div>
-                        <hr>
+                        <hr class ='linhaNav'>
                     </div>
                     <div class = 'divCenter'>
                         <div id ='cafeteria'>Cafeteria</div>
-                        <hr>
+                        <hr class ='linhaNav'>
                     </div>
                 </div>
 
@@ -26,21 +26,19 @@
                     
                     <img id = 'logo' src = "res/logo_escura.png" alt = "logo">
                     
-    
                     <div id ='nome'>Palavras Cafeinadas</div>
                 </div>
 
                 <div class = 'divsNav'>
                     <div class = 'divCenter'>
-                        <div id ='contato'>Contato</div>
-                        <hr>
+                        <div id ='contato' href = "#tituloContato">Contato</div>
+                        <hr class ='linhaNav'>
                     </div>
                     
                     <div class = 'flex-row'>
                         
                         <img id = 'phone-logo'src = "res/icon_phone.png" alt = "phone">
                         
-                
                         <div id ='telefone'>19-991256972</div>
                     </div>
                 </div>
@@ -52,7 +50,7 @@
         <div id="header" class = 'flex-row' >
             <div class = 'box'>
                 <div id = 'text1'>Leia acompanhado de uma culinária de qualidade</div>
-                <div id ='text2'>Aonde a paixão por livros e o amor por café sempre  tem lugar á mesa.</div>
+                <div id = 'text2'>Aonde a paixão por livros e o amor por café sempre  tem lugar á mesa.</div>
                 
                 <div id= 'botaoConhecer'>
                     <div class= "botao" >
@@ -64,14 +62,16 @@
         </div>
 
 
-        <section id="sobreNos">
-            <div id="containerSobre" >
-                <div class="fundoMarrom">
-                    <h1 id="tituloSobre">
-                        SOBRE NÓS
-                    </h1>
-                </div>
-                <div id="txtSobre">
+        <section id="sobreNos" class = 'flex-row'>
+            <div class = 'box flex-row '>
+                <div id = 'txtSobre' class = 'box'>
+                    <div>
+                        <h1 id="tituloSobre" >
+                            SOBRE NÓS
+                        </h1>
+                        <hr class = 'fundoMarrom'>
+                    </div>
+
                     <p>
                         A principal proposta da Cafeteria Palavras Cafeinadas é oferecer um espaço aconchegante, 
                         contendo um ambiente moderno e um atendimento completo, 
@@ -81,15 +81,16 @@
                         O sonho de Carolina era criar um espaço aonde pudesse unir seu amor por culinária e a enorme paixão por literatura, 
                         venha saber mais dessa jornada:
                     </p>
+
+                    <div id="botaoFale" >
+                        <p class="botao">FALE CONOSCO<img src = 'res/Union.png'></p>
+                    </div>
                 </div>
-                <div id="botaoFale" >
-                    <p class="botao">FALE CONOSCO<img src = 'res/Union.png'></p>
+  
+                <div id="imageSobre">
+                    <img src="res/Mask group.jpg" alt = ''>
                 </div>
-            </div>   
-                
-                <img id="imageSobre" src="res/Mask group.jpg">
-                
-            
+            </div>
         </section>
 
         <div id="imgOnda"><img src="res/onda.png"></div>
@@ -149,17 +150,16 @@
         </section>
 
         <section id = 'entreEmContato'>
-            <div class="box">
-                <div id = 'BoxTituloContato' class = 'border divsNav'>
-                    <div class = 'fundoMarrom'>
-                        <div id = 'tituloContato' >
-                            <h2> ENTRE EM CONTATO </h2>
-                        </div>
-                    </div>
+            <div class="box ">
+                
+                <div  id = 'cabecalhoContato' >
+                    <h1 id = 'tituloContato'>
+                        ENTRE EM CONTATO
+                    </h1>
+                    <hr class = 'fundoMarrom2'>
                 </div>
-    
-    
-                <div class="boxInfo border  divsNav" >
+                <div class="boxInfo  divsNav" >
+
                     <div class="retangulo">
                         <ul class="icon-style">  
                             <li class="icon-position"><img src="res/telefone.png" alt=""><span class="text-icons" >19-991256972</span></li>
@@ -184,12 +184,7 @@
                             <label for="message">Mensagem:</label><br>
                             <textarea id="message" name="message" rows="10" required></textarea><br>
                             
-                            
-                            
-                            
-                            <a id="botaoMsg" href="#">ENVIAR MENSAGEM<span class="material-icons"><img src="res/Union.png" alt=""></span></a>
-
-                            
+                            <a id="botaoMsg" href="#">ENVIAR MENSAGEM<span><img src="res/Union.png" alt=""></span></a>
                         </form>
                    </div>
 
@@ -197,15 +192,25 @@
 
         
             </div>
+
         </section>
 
-        <footer>
-            <p>Desenvolvido por Unect Jr</p>
-            <p>Todos os direitos reservados ©</p>
+        <section class="box-nos-encontre-aqui ">
+            <div class="text-nos-encontre divCenter"> NOS ENCONTRE AQUI:</div>
+            <div class="box-icons ">
+                <img id = 'facebook2' src="res/facebook2.png" alt="Facebook">
+                <img id = 'insta2' src="res/insta2.png" alt="Instagram">
+                <img id = 'telefone2' src="res/telefone2.png" alt="Telefone">
+            </div>
+        </section>
+
+
+        <footer class = ''>
+            
+                <p class = 'textFooter'>Desenvolvido por Unect Jr</p>
+                <p class = 'textFooter'>Todos os direitos reservados ©</p>
+            
         </footer>
-
-
-
 	</body>
 </html>
 

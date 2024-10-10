@@ -25,13 +25,27 @@ botaoFaleConosco.addEventListener('click', () => {
     entreEmContato.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
 });
 
+function atualizarDimensoes() {
+    const larguraDeTela = window.innerWidth;
+    const alturaDeTela = window.innerHeight;
+
+    let visiveis = 0;
+    if (larguraDeTela <= 1500) {
+        visiveis = 1;
+    } else {
+        visiveis = 3;
+    }
+
+    return visiveis;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const ant = document.getElementById('flecha-esq');
     const prox = document.getElementById('flecha-dir');
 
     const items = document.querySelectorAll('.item');
     
-    const visiveis = 3;
+    let visiveis = atualizarDimensoes();
     let aux = 0;
 
     function attCarrossel() {
@@ -61,6 +75,16 @@ document.addEventListener('DOMContentLoaded', () => {
             attCarrossel();
         }
     });
+
+    window.addEventListener('resize', () => {
+        visiveis = atualizarDimensoes();  
+        attCarrossel();  
+    });
+    
 });
+
+
+
+
 
 

@@ -15,7 +15,7 @@ h1{
     font-weight: 200;
 }
 
-hr {
+.linhaNav{
     border: 1.5px solid #B2784A;
     width: 50px;
     border-radius: 9px;
@@ -164,19 +164,21 @@ nav{
     font-family: "Open Sans", sans-serif;
     color: #F0F0F0;  
     font-weight: bold;
-    width: 1300px;
+    width: 100%;
     height: 228px;
     margin-top: 130px;
+    transition-duration: 0.4s;
 }
 
 #text2{
-    font-size: 35px;
+    font-size: 40px;
     font-family: "Open Sans", sans-serif;
     color: #F0F0F0; 
     font-weight: 400px;
-    width: 700px;
+    width: 50%;
     height: 66px;
     margin-top: 60px;
+    transition-duration: 0.4s;
 }
 
 #botaoConhecer{
@@ -204,9 +206,6 @@ nav{
     color: #F0F0F0; 
     font-weight: bold;
     display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: -288px;
     font-size: 25px;
 }
 
@@ -239,12 +238,12 @@ nav{
 
 
 .fundoMarrom{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom, transparent 50%, #FBC9A8 50%);
-    padding: 0 10px;
-    height: 42px;
+    color: #FBC9A8;
+    border: 15px solid #FBC9A8;
+    margin-top: -90px;
+    margin-left: -5px;
+    z-index: -1;
+    width: 320px;
 }
 
 
@@ -252,17 +251,17 @@ nav{
     display: flex;
     width: 100%;
     height: 600px;
-    justify-content: space-around;
-    align-items: center;
 }
 
 #txtSobre{
-    width: 589px;
-    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     color: #1F0C00;
-    font-size: 20px;
+    font-size: 25px;
     font-family: "Open Sans", sans-serif;
-    margin-bottom: 50px;
+    width: 60%;
+    transition-duration: 0.4s;
 }
 
 #tituloSobre{
@@ -270,17 +269,24 @@ nav{
     font-size: 60px;
     color: #1F0C00;
     font-family: "Cormorant Garamond", serif;  
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
 }
 
 
 
 #containerSobre{
-    margin-top: -40px;
     
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
 #imageSobre{
-    width: 400px;
+    width: 500px;
     height: auto;  
 }
 
@@ -380,45 +386,42 @@ nav{
     
 }
 
-p {
-    line-height: 1.6;
-}
-
 #entreEmContato{
     height: 828px;
     margin-top: 128px;
-    margin-bottom: 128px;
+    margin-bottom: 120px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
-#BoxTituloContato {
-    margin-top: 0px;
-    overflow: hidden;
-    height: auto;
-    border-radius: 10px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
 
+#cabecalhoContato{
+    margin-left: 45px;
+    margin-top: -90px;
 }
 
-#tituloContato {
-    margin-bottom: 0px;
-    font-weight: bold;
 
-  }
-  
-  #tituloContato h2 {
-    font-size: 35px;
-    position: relative;
-    z-index: 1;
-    font-family: "Cormorant Garamond", serif;
+#tituloContato {
+    color: #1F0C00;
     font-weight: bold;
-    
-  }
+    font-size: 60px;
+    font-family: "Cormorant Garamond", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+  
+.fundoMarrom2{
+    color: #FBC9A8;
+    border: 17px solid #FBC9A8;
+    margin-top: -85px;
+    margin-left: -1px;
+    z-index: -1;
+    width: 570px;
+}
+
 
 #flecha-esq{
     width: 30px;
@@ -574,6 +577,18 @@ textarea[name="message"] {
     background-color: #CA8E67;
 }
 
+.box-nos-encontre-aqui{
+    display: none;
+}
+
+.text-nos-encontre{
+    display: none;
+}
+
+.box-icons{
+    display: none;
+}
+
 
 
 footer{
@@ -584,6 +599,104 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 10px 110px;
+    transition-duration: 0.4s;
 
+}
+
+
+
+@media only screen and (max-width: 1480px){
+
+    #text1{
+        font-size: 50px;
+    }
+
+    #text2{
+        font-size: 30px;
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+    #text1{
+        font-size: 80px;
+    }
+
+    #text2{
+        font-size: 0px;
+    }
+
+    #imageSobre{
+        display: none;
+    }
+
+    #txtSobre{
+        font-size: 22px;
+    }
+
+    #botaoFale{
+        justify-content: center;
+    }
+
+    .retangulo{
+        display: none;
+    }
+
+    .box-nos-encontre-aqui{
+        display: flex;
+        height: 300px;
+        margin-top: -250px;
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    
+    .text-nos-encontre{
+        display: flex;
+        white-space: nowrap;
+        width: 600px;
+        height: 100px;
+        margin-top: 70px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        color: #1F0C00;
+        align-items: center;
+    }
+    
+    .box-icons{
+        display: flex;
+        list-style-type: none;
+        width: 500px;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #facebook2{
+        width: 120px;
+        height: auto;
+    }
+    #insta2{
+        width: 120px;
+        height: auto;
+    }
+    #telefone2{
+        width: 120px;
+        height: auto;
+    }
+
+    footer{
+        background-color: #57290B;
+        color: #ffdab8;
+        font-family: "Open Sans", sans-serif;
+        font-size: 25px;
+        padding: 40px 110px;
+    }
+    
 }
 
