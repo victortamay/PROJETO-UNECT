@@ -68,6 +68,7 @@ botaoMenu.addEventListener('click', () => {
         openMenu = false;
         botaoMenu.style.width = 'auto'; 
         botaoMenu.style.height = 'auto'; 
+        botaoMenu.src = 'res/menu-icon.png';
     } else {
         Menu.style.display = 'flex';
         openMenu = true;
@@ -134,19 +135,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
 });
 
-botaoMenu.addEventListener('click', () => {
-    Menu.style.display = "block";
-});
 
-botaoMenuFechar.addEventListener('click', () => {
-    Menu.style.display = "none";
-});
 
-window.addEventListener('click', (event) => {
-    if(event.target == Menu){
-        Menu.style.display = "none";
-    }
-});
+
 
 
 
