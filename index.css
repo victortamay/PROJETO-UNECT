@@ -569,7 +569,7 @@ label {
     padding: 30px;
     background-color:#F5F3ED;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     font-family: "Open Sans", sans-serif;
     width: 100%;
     max-width: 1000px;
@@ -577,7 +577,7 @@ label {
 
 input{
     display: flex;
-    border: 1px solid #8F542E;
+    border: 3px solid #8F542E;
     border-radius: 5px;  
     height: 80px;
     margin-bottom: 10px;
@@ -594,7 +594,7 @@ input[type="email"]{
 
 textarea {
     display: flex;
-    border: 1px solid #8F542E;
+    border: 3px solid #8F542E;
     border-radius: 5px;  
     height: 80px;
     margin-bottom: 10px;
