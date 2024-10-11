@@ -820,12 +820,13 @@ footer{
 
 @media only screen and (max-width: 800px){
     
-    #txtSobre{
-        width: 85%;
+    #sobreNos{
+        margin-bottom: -70px;
     }
 
     #txtSobre{
         font-size: 19px;
+        width: 85%;
     }
 
     #tituloContato{
