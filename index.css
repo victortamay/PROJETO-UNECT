@@ -671,12 +671,12 @@ footer{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    font-family: "Open Sans", sans-serif;
+    
+    
 }
 
 button{
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
+    
     width: 92%;
     height: 90px;
     background-color: #FFFFFF;
@@ -690,10 +690,18 @@ button{
     justify-content: start;
     align-items: center;
     transition-duration: 0.6s;
-    font-size: 40px;
+    
 }
 button:hover{
     margin-bottom: 10px;
+}
+
+.txtMenu{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: #1F0C00;
+    margin-left: 30px;
 }
 
 
