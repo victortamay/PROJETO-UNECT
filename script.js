@@ -3,9 +3,10 @@ const botaoCafeteria = document.getElementById('cafeteria');
 const botaoContato = document.getElementById('contato');
 const botaoConhecer = document.getElementById('botaoConhecer');
 const botaoFaleConosco = document.getElementById('botaoFale');
-const botaoMenu = document.getElementById('menu');
+const botaoMenu = document.getElementById('botao-menu');
 const botaoMenuFechar = document.getElementById('menuFechar');
 const Menu = document.getElementById('menuAberto');
+const Home = document.getElementById('header');
 
 botaoSobreNos.addEventListener('click', () => {
     sobreNos.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
@@ -25,6 +26,54 @@ botaoConhecer.addEventListener('click', () => {
 
 botaoFaleConosco.addEventListener('click', () => {
     entreEmContato.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+});
+
+function homePos(){
+    Menu.style.display = 'none';
+    botaoMenu.style.width = 'auto'; 
+    botaoMenu.style.height = 'auto'; 
+    Home.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+    openMenu = false;
+}
+
+function sobreNosPos(){
+    Menu.style.display = 'none';
+    botaoMenu.style.width = 'auto'; 
+    botaoMenu.style.height = 'auto'; 
+    sobreNos.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+    openMenu = false;
+}
+
+function cafeteriaPos(){
+    Menu.style.display = 'none';
+    botaoMenu.style.width = 'auto'; 
+    botaoMenu.style.height = 'auto'; 
+    carrosselPrinc.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+    openMenu = false;
+}
+
+function contatoPos(){
+    Menu.style.display = 'none';
+    botaoMenu.style.width = 'auto'; 
+    botaoMenu.style.height = 'auto'; 
+    entreEmContato.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+    openMenu = false;
+}
+
+let openMenu = false;
+
+botaoMenu.addEventListener('click', () => {
+    if(openMenu){
+        Menu.style.display = 'none';
+        openMenu = false;
+        botaoMenu.style.width = 'auto'; 
+        botaoMenu.style.height = 'auto'; 
+    } else {
+        Menu.style.display = 'flex';
+        openMenu = true;
+        
+        botaoMenu.src = "res/close.png";
+    }
 });
 
 function atualizarDimensoes() {

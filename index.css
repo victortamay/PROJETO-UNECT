@@ -186,7 +186,7 @@ nav{
     height: 22px;*/
 }
 
-#menu{
+#botao-menu{
     display: none;
 }
 
@@ -655,7 +655,24 @@ footer{
 
 #menuAberto{
     display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #696969BB;
+    z-index: 1000;
+    transition-duration: 0.4s;
 }
+
+#menuConteudo{
+    width: 100%;
+    height: 450px;
+    background-color: #F5F3ED;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 
 @media only screen and (max-width: 1480px){
 
@@ -693,10 +710,8 @@ footer{
         display: flex;
         flex-direction: row;
     }
-    #menu{
+    #botao-menu{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         cursor: pointer;
     }
     #nome{
