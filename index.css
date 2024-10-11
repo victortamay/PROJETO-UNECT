@@ -821,6 +821,10 @@ footer{
 @media only screen and (max-width: 800px){
     
     #txtSobre{
+        width: 85%;
+    }
+
+    #txtSobre{
         font-size: 19px;
     }
 
