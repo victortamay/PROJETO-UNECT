@@ -925,4 +925,9 @@ button:hover{
         height: 200px;
     }
 
+    #botao-menu{
+        width: 90px;
+        height: auto;
+    }
+
 }
